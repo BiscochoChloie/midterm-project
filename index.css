@@ -1,0 +1,357 @@
+body {
+  min-height: 100%;
+  min-width: 1024px;
+  height: auto;
+  width: 100%;
+  
+ 
+/* background-image: url("img/b.jpg");*/
+}
+
+.header{
+  margin: 20px;
+  height: 190px;
+  background-color: lightcyan;
+  padding: 0 20px;
+}
+/* NAVIGATION */
+.nav-link{ 
+    color: lightcoral;
+    margin-left: 15px;
+    margin-right: 35px;
+}
+.nav * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+.nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0.5em 1em;
+    padding: 0;
+}
+.nav a {
+    padding: 0.8em 17px;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+  .nav a:before,
+  .nav a:after {
+    left: 0%;
+    right: 0%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(0deg);
+    transform: translateY(-50%) rotate(0deg);
+    content: '';
+    border-left: 12px solid #46627f;
+    border-right: 12px solid #46627f;
+    height: 3px;
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+  .nav a:hover,
+  .nav .current a {
+    color: lightcoral;
+}
+  .nav a:hover:before,
+  .nav .current a:before {
+    -webkit-transform: translateY(-50%) rotate(12deg);
+    transform: translateY(-50%) rotate(12deg);
+}
+  .nav a:hover:after,
+    .nav .current a:after {
+    -webkit-transform: translateY(-50%) rotate(-12deg);
+    transform: translateY(-50%) rotate(-12deg);
+}
+
+
+
+/* IMAGES */
+
+  .tz-gallery{
+    margin-top: 40px;
+    margin: 20px;
+    height: auto;
+    background-color: lightcyan;
+    padding: 0 20px;
+  } 
+
+  .snip1295 {
+    position: relative;
+    overflow: hidden;
+    margin-block-end: 5px;
+    padding: 5px;
+    margin: 4.5px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    box-shadow: none !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+}
+  .snip1295 img {
+    max-width: 100%;
+    vertical-align: top;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+  .snip1295 .border {
+    position: absolute;
+    opacity: 0.45;
+}  
+  .snip1295 .border:before,
+  .snip1295 .border:after,
+  .snip1295 .border div:before,
+  .snip1295 .border div:after {
+    background-color: black;
+    position: absolute;
+    content: "";
+    display: block;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+  .snip1295 .border:before,
+  .snip1295 .border:after {
+    width: 0;
+    height: 1px;
+}
+  .snip1295 .border div:before,
+  .snip1295 .border div:after {
+    width: 2px;
+    height: 0;
+}
+  .snip1295 .border.one {
+    left: 0;
+    top: 0;
+    right: 12px;
+    bottom: 12px;
+}
+  .snip1295 .border.one:before,
+  .snip1295 .border.one div:before {
+    left: 0;
+    top: 0;
+}
+  .snip1295 .border.one:after,
+  .snip1295 .border.one div:after {
+    bottom: 0;
+    right: 0;
+}
+  .snip1295 .border.two {
+    left: 12px;
+    top: 12px;
+    right: 0;
+    bottom: 0;
+}
+  .snip1295 .border.two:before,
+  .snip1295 .border.two div:before {
+    right: 0;
+    top: 0;
+}
+  .snip1295 .border.two:after,
+  .snip1295 .border.two div:after {
+    bottom: 0;
+    left: 0;
+}
+  .snip1295 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+  .snip1295:hover .border:before,
+  .snip1295.hover .border:before,
+  .snip1295:hover .border:after,
+  .snip1295.hover .border:after {
+    width: 100%;
+}
+  .snip1295:hover .border div:before,
+  .snip1295.hover .border div:before,
+  .snip1295:hover .border div:after,
+  .snip1295.hover .border div:after {
+    height: 100%;
+}
+
+/*CONTACT*/
+
+.video {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  overflow: hidden;    position: relative;
+  text-align: center;
+}
+.video img {
+  min-width: 100%;
+  min-height: 100%;
+
+}
+.video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding-top: 30px;
+}
+.video .overlay h2 {
+text-transform: uppercase;
+font-size: 35px
+}
+.video .overlay p {
+  color: #cccccc !important;
+}
+.video .overlay .social {
+  margin-top: 40px;
+  cursor: pointer;
+  
+}
+.video .overlay .social li {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  line-height: 55px;
+  font-size: 25px;
+  transition: .5s ease;
+  margin-right: 5px;
+}
+.video .overlay .social li:last-child {
+  margin-right: 0;
+}
+.video .overlay .social li:hover {
+  border-color: #0b8ffe;
+  cursor: pointer;
+  box-shadow: 0 0 20px #0b8ffe;
+  transform: scale(1.2)
+}
+.video .overlay form {
+  width: 80%;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.video .overlay form input {
+  height: 40px;
+  background-color: transparent;
+  padding: 5px 0px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+color: #fff;
+}
+.video .overlay form textarea {
+  background-color: transparent;
+  padding: 5px 0px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 100%;
+color: #fff;
+}
+.video .overlay form input:focus,.video .overlay form textarea:focus {
+  border-bottom-color: #0b8ffe;
+  box-shadow: 0px 0px 20px rgba(11, 143, 254, 0.42);
+}
+.video .overlay form input::-webkit-input-placeholder,
+.video .overlay form textarea::-webkit-input-placeholder {
+  color: #e8e8e8;
+  text-transform: capitalize;
+}
+.video .overlay form [name="firstname"],
+.video .overlay form [name="lastname"],
+.video .overlay form [name="phone"] {
+  width: 31%;
+}
+.video .overlay form [name="email"],
+.video .overlay form [name="subject"] {
+  width: 48%;
+  margin-bottom: 80px;
+}
+.video .overlay form button {
+  background-color: transparent;
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 1s ease;
+  overflow: hidden;
+}
+.video .overlay form button:hover {
+  color: #0b8ffe;
+  border-color: #0b8ffe;
+  box-shadow: 0 0 20px #0b8ffe;
+  cursor: pointer
+}
+.video .overlay form button:hover div {
+ /* transform: rotate(-422deg) scale(1.5, 1.5) translate(50%, 50px);*/
+  transform: scale(2) translateX(200px);
+  transition: 1s ease-in-out;
+  color: transparent;
+}
+/* ----------- start media query for video & contact ----*/
+@media only screen and (max-width: 575px) {
+  .video .overlay {
+      padding-top: 40px;
+  }
+  .video .overlay .social {
+      margin-top: 30px;        
+      
+  }
+  .video .overlay .social li   {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      line-height: 40px;
+  }
+  .video .overlay form {
+      width: 90%;
+      margin: 40px auto 0;
+      flex-direction: column;
+      align-items: center;
+  }
+  .video .overlay form input {
+      width: 95% !important;
+      margin-bottom: 15px !important;
+  }
+  .video .overlay form textarea {
+      width: 95%;
+      margin-top: 15px;
+  }
+  .video .overlay form button {
+      width: 95%;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  
+  .video .overlay form {
+      width: 90%;
+      margin: 60px auto 0;
+  }
+  .video .overlay form [name="firstname"],
+  .video .overlay form [name="lastname"] {
+      width: 48%;
+  }
+  .video .overlay form [name="phone"],
+  .video .overlay form [name="email"] {
+      width: 48%;
+      margin-bottom: 30px;
+  }
+  .video .overlay form [name="subject"] {
+      width: 100%;
+  }
+  
+}
